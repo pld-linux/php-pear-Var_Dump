@@ -7,7 +7,7 @@ Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
 Version:	0.3
-Release:	1	
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	5647ffd4052e8f646c13add468f2eb95
