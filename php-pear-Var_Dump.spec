@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Var
 %define		_subclass	Dump
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
@@ -26,6 +27,8 @@ way:
  - If given an object, informations about the object and the class are
    printed.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Wy¶wietla graficznie informacje o warto¶ciach zmiennych:
  - je¿eli dana jest prosta zmienna (string, integer, double, resource),
@@ -34,6 +37,8 @@ Wy¶wietla graficznie informacje o warto¶ciach zmiennych:
    s± prezentowane w formacie, który pokazuje klucze i elementy,
  - je¿eli dany jest obiekt, informacje o obiekcie i klasie s±
    wy¶wietlane.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
