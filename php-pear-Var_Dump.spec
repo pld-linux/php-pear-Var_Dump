@@ -29,7 +29,7 @@ way:
  - If given an object, informations about the object and the class are
    printed.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Wy¶wietla graficznie informacje o warto¶ciach zmiennych:
