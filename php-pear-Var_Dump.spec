@@ -1,14 +1,13 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Var
-%define		_subclass	Dump
+%define		_class		Var_Dump
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	%{_class}
 
 Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -47,11 +46,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}/Renderer
 
 install %{_pearname}-%{version}/%{_pearname}.php $RPM_BUILD_ROOT%{php_pear_dir}
-install %{_pearname}-%{version}/%{_pearname}/Renderer.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/%{_pearname}/Renderer/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
+install %{_pearname}-%{version}/%{_pearname}/Renderer.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}
+install %{_pearname}-%{version}/%{_pearname}/Renderer/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}/Renderer
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -60,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/{example*,test.php,renderer-xml.dtd,memory-usage.txt}
 %{php_pear_dir}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/%{_pearname}
