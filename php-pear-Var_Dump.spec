@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	619e6789401889d3dccd503f2c4f53d9
+# Source0-md5:	ee4a176bec0bbf3c2111377e3e17499f
 URL:		http://pear.php.net/package/Var_Dump/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -47,13 +47,17 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
 
-install %{_pearname}-%{version}/%{_pearname}.php $RPM_BUILD_ROOT%{php_pear_dir}/
+install %{_pearname}-%{version}/%{_pearname}.php $RPM_BUILD_ROOT%{php_pear_dir}
+install %{_pearname}-%{version}/%{_pearname}/Renderer.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/%{_pearname}/Renderer/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Renderer
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc %{_pearname}-%{version}/{example*,test.php,renderer-xml.dtd,memory-usage.txt}
 %{php_pear_dir}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
