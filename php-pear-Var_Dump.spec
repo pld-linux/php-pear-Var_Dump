@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Var
 %define		_subclass	Dump
-%define		_status		alpha
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
-Version:	0.4.2
+Version:	1.0.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	24d20cb5e11968c9afd6df7d3081d782
+# Source0-md5:	619e6789401889d3dccd503f2c4f53d9
 URL:		http://pear.php.net/package/Var_Dump/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
