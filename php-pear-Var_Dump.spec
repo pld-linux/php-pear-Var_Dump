@@ -22,23 +22,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Displays informations about the values of variables on a graphical
 way:
- - If given a simple variable (string, integer, double, ressource), the
-   value itself is printed,
- - If given an array, it is explored recursively and values are
-   presented in a format that shows keys and elements,
- - If given an object, informations about the object and the class are
-   printed.
+- If given a simple variable (string, integer, double, ressource), the
+  value itself is printed,
+- If given an array, it is explored recursively and values are
+  presented in a format that shows keys and elements,
+- If given an object, informations about the object and the class are
+  printed.
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Wy¶wietla graficznie informacje o warto¶ciach zmiennych:
- - je¿eli dana jest prosta zmienna (string, integer, double, resource),
-   sama warto¶æ jest wypisywana,
- - je¿eli dana jest tablica, przeszukiwana jest rekursywnie i warto¶ci
-   s± prezentowane w formacie, który pokazuje klucze i elementy,
- - je¿eli dany jest obiekt, informacje o obiekcie i klasie s±
-   wy¶wietlane.
+- je¿eli dana jest prosta zmienna (string, integer, double, resource),
+  sama warto¶æ jest wypisywana,
+- je¿eli dana jest tablica, przeszukiwana jest rekursywnie i warto¶ci
+  s± prezentowane w formacie, który pokazuje klucze i elementy,
+- je¿eli dany jest obiekt, informacje o obiekcie i klasie s±
+  wy¶wietlane.
 
 Ta klasa ma w PEAR status: %{_status}.
 
