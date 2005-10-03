@@ -7,13 +7,15 @@ Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
-Release:	1.2
+Release:	1.3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	68e55d06868baf3189442d0eb5ee1401
 URL:		http://pear.php.net/package/Var_Dump/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.0.4
+Requires:	php-pcre
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
