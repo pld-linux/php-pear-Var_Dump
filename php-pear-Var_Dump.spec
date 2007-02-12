@@ -3,7 +3,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - methods for dumping information about a variable
-Summary(pl.UTF-8):   %{_pearname} - metody zrzucania informacji o zmiennych
+Summary(pl.UTF-8):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
 Version:	1.0.3
 Release:	2
@@ -47,7 +47,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
