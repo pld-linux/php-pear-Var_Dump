@@ -3,7 +3,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - methods for dumping information about a variable
-Summary(pl):	%{_pearname} - metody zrzucania informacji o zmiennych
+Summary(pl.UTF-8):   %{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
 Version:	1.0.3
 Release:	2
@@ -34,20 +34,20 @@ way:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Wy∂wietla graficznie informacje o warto∂ciach zmiennych:
-- jeøeli dana jest prosta zmienna (string, integer, double, resource),
-  sama warto∂Ê jest wypisywana,
-- jeøeli dana jest tablica, przeszukiwana jest rekursywnie i warto∂ci
-  s± prezentowane w formacie, ktÛry pokazuje klucze i elementy,
-- jeøeli dany jest obiekt, informacje o obiekcie i klasie s±
-  wy∂wietlane.
+%description -l pl.UTF-8
+Wy≈õwietla graficznie informacje o warto≈õciach zmiennych:
+- je≈ºeli dana jest prosta zmienna (string, integer, double, resource),
+  sama warto≈õƒá jest wypisywana,
+- je≈ºeli dana jest tablica, przeszukiwana jest rekursywnie i warto≈õci
+  sƒÖ prezentowane w formacie, kt√≥ry pokazuje klucze i elementy,
+- je≈ºeli dany jest obiekt, informacje o obiekcie i klasie sƒÖ
+  wy≈õwietlane.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -56,7 +56,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
