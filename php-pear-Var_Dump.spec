@@ -1,7 +1,6 @@
 %define		_class		Var_Dump
 %define		_status		stable
 %define		_pearname	Var_Dump
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - methods for dumping information about a variable
 Summary(pl.UTF-8):	%{_pearname} - metody zrzucania informacji o zmiennych
 Name:		php-pear-%{_pearname}
